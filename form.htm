@@ -1,0 +1,256 @@
+<html>
+<head>
+<style>
+
+    table{
+        border-radius: 10px;
+        border-color:coral;
+        border-width: 3;
+        border-style: solid;
+        background-color:white;
+        
+    }
+    
+    body{
+
+        background-color:white;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    table h1{
+        text-align: center;}
+
+</style>
+<title>REGISTRATION FORM</title>
+<script>
+    function checkPass(){
+        var pass1 = document.getElementById("p1").value;
+        var pass2 = document.getElementById("p2").value;
+        
+        if (pass1 == pass2){
+            alert("Login Success");
+        }
+        else{
+            alert("Password not matched !");
+        }
+    }2
+</script>
+
+</head>
+<body bgcolor="#90E0EF">
+
+<form method="post">
+    
+<table align="center" cellpadding="5" cellspacing="2">
+    <tr>
+        <th colspan="2">
+            <h1> Resgistration form </h1>
+        </th>
+
+        </tr>
+    <tr>
+<td align="right">
+    <b> First Name :</b>
+    </td>
+    <td>
+       <input type="text" required style="width: 240px";>
+</td>
+<td rowspan="11">
+    
+</td>
+</tr>
+<tr>
+<td align="right">
+    <p1><b>Last Name : </b></p1></td>
+    <td>
+        <input type="text" required style="width: 240px";>
+    </td>
+    </tr>
+   
+    <tr>
+    <td align="right">
+        <p2><b> Address : </b></p2>
+    </td>
+    <td>
+        <input type="text" required style="width: 240px">
+    </td>
+    </tr>
+
+    <tr>
+        <td align="right">
+            <p2><b>Email :</b></p2>
+        </td>
+<td>
+    <input type="email" required style="width: 240px">
+</td>
+    </tr>
+
+    <tr>
+        <td align="right">
+            <p1><b>Contact No. :</b></p1>
+        </td>
+<td>
+    <select id="country Code">
+        <option>+91</option>
+        <option>+93</option>
+        <option>+54</option>
+        <option>+61</option>
+        <option>+43</option>
+        <option>+1</option>
+        <option>+86</option>
+        <option>+33</option>
+        <option>+49</option>
+        <option>+39</option>
+        <option>+81</option>
+        <option>+7</option>
+        <option>+82</option>
+        <option>+34</option>
+        <option>+44</option>
+        <option>+41</option>
+        <option>+46</option>
+            <input type="tel" minlength="10" maxlength="10" required style="width: 198px">
+</td>
+</tr>
+
+<tr>
+    <td align="right">
+        <p1><b>Password : </b></p1>
+    </td>
+    <td>
+        <input type="password"  id="p1" minlength="8" required style="width: 240px">
+    </td>
+</tr>
+
+<tr>
+    <td align="right">
+        <p1><b> Confirm Password : </b></p1>
+    </td>
+    <td>
+        <input type="password" id="p2" minlength="8" required style="width: 240px">
+    </td>
+</tr>
+
+<tr>
+    <td align="right">
+        <p1><b>Preferred Language :</b></p1>
+    </td>
+    <td>
+        <select id="Language" required>
+            <option>English</option>
+            <option>Hindi</option>
+            <option>French</option>
+            <option>Spanish</option>
+            <option>Greman</option>
+            <option>Urdu</option>
+            <option>chinese</option>
+            <option>Koreon</option>
+            <option>Russian</option>
+            <option>Japanese</option>
+            <option>Arabic</option>
+            <option>Itallian</option>
+            <option>UK English</option>
+            <option>European</option>
+            </select>
+    </td>
+</tr>
+
+<tr>
+    <td align="right">
+        <p1><b>Gender :</b></p1>
+    </td>
+    <td>
+        <input type="radio" name="ayaan" required> <b>Male</b> <input type="radio"  name="ayaan" required> <b>Female</b>
+        <input type="radio"  name="ayaan" required> <b>Others</b>
+    </td>
+</tr>
+<tr>
+    <td align="right">
+        <p1><b>Qualification:</b></p1>
+    </td>
+        <td>
+            <input type="file" required>
+        </td>
+</tr>
+
+<tr>
+    <td colspan="2">
+    <center><br><input type="submit" name="submit"  onclick="checkPass()"></br</center>
+</td>   
+</tr>
+
+
+</form>
+</table>
+</body>
+<html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
