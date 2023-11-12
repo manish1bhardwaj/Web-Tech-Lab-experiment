@@ -1,0 +1,38 @@
+<html>
+
+    <head>
+        <title> Find largest number </title>
+
+        <script>
+            function LargestNumber()
+            {
+                var num1, num2, num3;
+                num1 = Number(document.getElementById("n1").value);
+                num2 = Number(document.getElementById("n2").value);
+                num3 = Number(document.getElementById("n3").value);
+                
+                if(num1>num2 && num1>num3)
+                {
+                    window.alert(num1+" is greatest");
+                }
+                else if(num2>num1 && num2>num3)
+                {
+                    window.alert(num2+" is greatest");
+                }
+                else if(num3>num1 && num3>num2)
+                {
+                    window.alert(num3+" is greatest");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h2> Find the largest among the three numbers: </h2>
+        Enter number 1 : <input type="text" id="n1"></input><br><br>
+        Enter number 2 : <input type="text" id="n2"></input><br><br>
+        Enter number 3 : <input type="text" id="n3"></input><br><br>
+        <button onclick="LargestNumber()"> Check </button>
+    </body>
+
+</html>
