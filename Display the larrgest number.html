@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Find The largest Number</title>
+        <style>
+             #button{
+                background-color: #ff0000;
+                border: none;
+                border-radius: 3px;
+                color: white;
+                padding: 15px 30px;
+                text-align: center;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+        </style>
+        
+        
+        <script>
+            function msg(){
+                var a = prompt("Enter the first number");
+                var b = prompt("Enter the second number");
+                var c = prompt("Enter the third number");
+
+                if(a>=b & a>=c){
+                    alert("first number ("+a+") is the largest !");
+                }
+                else if(b>=a & b>=c){
+                    alert("second number ("+b+") is the largest !");
+                }
+                else{
+                    alert("third number ("+c+") is the largest !");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button id="button" onclick="msg()"> Find Largest Number</button>
+
+    </body>
+</html>
