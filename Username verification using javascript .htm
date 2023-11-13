@@ -1,0 +1,35 @@
+ <html>
+    <head>
+        <title>
+            Username verification using javascript
+        </title>
+        <script>
+           
+            var nam = "manish"
+            var pass = "password"
+
+            function check(){
+                var nam1 = document.getElementById("uname").value;
+                var pass1= document.getElementById("upass").value;
+
+
+            if((nam1 == pass1) & (pass1 == nam1)){
+                alert("welcome"+nam)
+
+            }
+            else{
+                alert("Login failed")
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+            Username :
+            <input type ="text" id="uname" required><br><br>
+            Password :
+            <input type ="password" id="upass" required><br><br>
+            <button onclick="check()"> LOGIN</button>
+        </form>
+    </body>
+</html>
